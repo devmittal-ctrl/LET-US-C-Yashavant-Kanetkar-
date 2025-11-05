@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+  int n1,n2;
+   // calculating the sum of a 5 digit number from its digits
+   int n,rem,sum=0;
+   printf("enter a 5 digit number ");
+   scanf("%d",&n);
+   if(n>9999 && n<100000){
+    while(n!=0){
+      rem=n%10;
+      n/=10;
+      sum=sum+rem;
+    }
+    printf("the sum of 5 digits are %d",sum);
+   }
+   else 
+   printf("pls enter a valid input");
+    return 0;
+}
