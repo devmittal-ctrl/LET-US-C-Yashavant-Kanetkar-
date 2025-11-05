@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+  int n1,n2;
+    // here we are going to swap 2 number by using 3 diifernt methods 
+    // METHOD 1
+    // ARITHMATIC METHOD 
+    printf("enter the first number ");
+    scanf("%d",&n1);
+    printf("enter the second number ");
+    scanf("%d",&n2);
+    // after swapping the variables 
+    n1=n1+n2;
+    n2=n1-n2;
+    n1=n1-n2;
+    printf("%d is the first number after swapping\n",n1);
+     printf("%d is the second number after swapping\n",n2);
+     // METHOD 2
+     // BITWISE OPERATOR
+      printf("enter the first number ");
+    scanf("%d",&n1);
+    printf("enter the second number ");
+    scanf("%d",&n2);
+     n1=n1^n2;
+     n2=n1^n2;
+     n1=n1^n2;
+    printf("%d is the first number after swapping\n",n1);
+     printf("%d is the second number after swapping\n",n2);
+     // METHOD 3
+     // TEMPORARY VARIABLE 
+     printf("enter the first number ");
+    scanf("%d",&n1);
+    printf("enter the second number ");
+    scanf("%d",&n2);
+    int temp=n1;
+    n1=n2;
+    n2=temp;
+        printf("%d is the first number after swapping\n",n1);
+     printf("%d is the second number after swapping\n",n2);
+    return 0;
+}
