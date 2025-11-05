@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+   // calculating the reverse of a 5 digit number from its digits
+   int n,rem1,rem2,sum;
+   printf("enter a 4 digit number ");
+   scanf("%d",&n);
+   if(n>999 && n<10000){
+      rem1=n%10;
+      sum=rem1+n/1000;
+    printf("the sum of 5 digits are %d",sum);
+   }
+   else 
+   printf("pls enter a valid input");
+    return 0;
+}
