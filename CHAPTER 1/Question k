@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    // 10,50,100
+    int n;
+    printf("enter the amount of the money you want to withdraw ");
+    scanf("%d",&n);
+    printf("10 rs notes : %d\n",n/10);
+    printf("100 rs notes : %d\n",n/100);
+    printf("50 rs notes : %d\n",n/50);
+    return 0;
+}
