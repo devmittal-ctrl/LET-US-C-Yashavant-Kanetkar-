@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+   // 12391 > 23402
+   int n;
+   int found=1,rem,ans=0;
+   printf("enter the number ");
+   scanf("%d",&n);
+   while(n>0){
+    rem=n%10;
+    rem=(rem+1)%10; // add one 
+    ans=ans+rem*(found);
+    found*=10;
+    n/=10;
+   }
+   printf("%d",ans);
+    return 0;
+}
