@@ -1,15 +1,21 @@
 #include<stdio.h>
+int sum(int a){
+   int ld=a%10;
+   int fd=a/1000;
+   int sum=ld+fd;
+        printf("\n(First digit = %d) + (last Digit = %d) = sum = %d",fd,ld,sum);
+        return 0;
+}
 int main(){
-   // calculating the reverse of a 5 digit number from its digits
-   int n,rem1,rem2,sum;
-   printf("enter a 4 digit number ");
-   scanf("%d",&n);
-   if(n>999 && n<10000){
-      rem1=n%10;
-      sum=rem1+n/1000;
-    printf("the sum of 5 digits are %d",sum);
-   }
-   else 
-   printf("pls enter a valid input");
+    // four digit number and first and last digit sum is answer
+    int n;
+    printf("enter a number ");
+    scanf("%d",&n);
+    if(n>999 && n<10000){
+       sum(n);
+    }
+    else{
+         printf("pls enter a valid input\n");
+    }
     return 0;
 }
