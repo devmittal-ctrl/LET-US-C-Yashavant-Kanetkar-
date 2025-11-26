@@ -1,17 +1,16 @@
 #include<stdio.h>
 int main(){
-   // calculating the reverse of a 5 digit number from its digits
-   int n,rem=0,sum=0;
-   printf("enter a 5 digit number ");
-   scanf("%d",&n);
-   if(n>9999 && n<100000){
-    while(n!=0){
-      rem=rem*10 + n%10;
-      n/=10;
-    }
-    printf("the sum of 5 digits are %d",rem);
-   }
-   else 
-   printf("pls enter a valid input");
+    // reversing a 5 digit number 
+    int n;
+    printf("enter a 5 digit number : ");
+    scanf("%d",&n);
+    int ans=0,rem;
+    if(n>=10000 && n<=99999)
+        while(n!=0){
+            rem=n%10;
+            ans=ans*10+rem;
+            n/=10;
+        }
+        printf("ANSWER = %d",ans);
     return 0;
 }
