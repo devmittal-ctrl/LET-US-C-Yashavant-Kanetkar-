@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    /* total population 80k
+    men = 52
+    t literacy = 48
+    men lite = 35
+
+    */
+   int a=80000;
+   int men=80000*52/100;
+   int women=a-men;
+   int men_li=men*35/100;
+   int men_ili=men-men_li;
+   int women_li=women*13/100;
+   int women_ili=women-women_li;
+   printf("illetrate men : %d\nilletrate women : %d",men_ili,women_ili);
+    return 0;
+}
