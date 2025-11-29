@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  // making the programme to calculate the profit and loss of the seller
+  int cp,sp;
+  printf("enter the cost price ");
+  scanf("%d",&cp); 
+  printf("enter the selling price ");
+  scanf("%d",&sp); 
+  cp>sp ? printf("the seller has made loss of %d ",cp-sp) : printf("the seller has made profit of %d ",sp-cp) ;
+  return 0;
+}
