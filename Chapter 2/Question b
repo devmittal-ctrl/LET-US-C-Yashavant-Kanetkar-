@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  // checking for a odd or even number 
+  int b;
+  printf("enter a interger ");
+  scanf("%d",&b);
+  b%2==0 ? printf("even number ") : printf("odd number ");
+  return 0;
+}
