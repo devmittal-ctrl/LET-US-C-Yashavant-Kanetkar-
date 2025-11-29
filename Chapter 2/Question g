@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  int a,s,d;
+  printf("enter the forst angle of the triangle ");
+  scanf("%d",&a);
+  printf("enter the second angle of the triangle ");
+  scanf("%d",&s);
+  printf("enter the third angle of the triangle ");
+  scanf("%d",&d);
+  if(a==0 || s==0 || d==0) printf("not a valid input");
+  else a+s+d ==180 ? printf("valid traingle ") : printf("not a valid traingle ");
+  return 0;
+}
