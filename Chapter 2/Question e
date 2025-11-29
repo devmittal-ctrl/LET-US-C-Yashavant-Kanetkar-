@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+ // reversing the number and checking them
+ int a;
+ int rem,ans=0;
+ printf("eneter a number ");
+ scanf("%d",&a);
+ int orinum=a;
+ while(a>0){
+  rem=a%10;
+  ans=ans*10+rem;
+  a/=10;
+ }
+ printf("the reverse number is %d",ans);
+ if(ans==orinum) printf("\nyes the number are equal ");
+ else printf("\nnot equal ");
+  return 0;
+}
