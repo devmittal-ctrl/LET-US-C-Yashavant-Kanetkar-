@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  // determining the smallest among 3
+  int a,s,d;
+  printf("enter the agre of ram ");
+  scanf("%d",&a);
+  printf("enter the agre of shyam ");
+  scanf("%d",&s);
+  printf("enter the agre of ajay ");
+  scanf("%d",&d);
+  if(a<s && a<d) printf("ram is youngest ");
+  if(s<a && s<d) printf("shyam is youngest ");
+  if(d<s && d<a) printf("ajay is youngest ");
+  return 0;
+}
