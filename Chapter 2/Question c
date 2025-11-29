@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  int b;
+  printf("enter a year ");
+  scanf("%d",&b);
+  // counting the number of days 
+  int a=(b-1)*365; // normal days
+  a+=(b-1)/4;
+  a+=(b-1)/400;
+  a-=(b-1)/100;
+  int c=a%7;
+  switch(c){
+    case 0: printf("monday"); break;
+    case 1: printf("tuesday"); break;
+    case 2: printf("wedday"); break;
+    case 3: printf("thrusday"); break;
+    case 4: printf("friday"); break;
+    case 5: printf("saturday"); break;
+    case 6: printf("sunday"); break;
+  }
+  return 0;
+}
