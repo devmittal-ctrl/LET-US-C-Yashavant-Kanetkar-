@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  int a,s;
+  printf("enter the length ");
+  scanf("%d",&a);
+  printf("enter the breadth ");
+  scanf("%d",&s);
+  int perimeter = 2*(a+s);
+  int area=a*s;
+  printf("perimeter : %d\tarea : %d",perimeter,area);
+  if(area>perimeter) printf("\nyes ");
+  else printf("\nno");
+  return 0;
+}
